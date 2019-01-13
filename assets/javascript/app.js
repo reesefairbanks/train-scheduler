@@ -1,11 +1,11 @@
 
 //add firebase
-//update current time
 //update train arrival time
 //show train information
   //name
   //destination
   //first train time, in military time
+  //update train frequency
 
 
 
@@ -42,11 +42,11 @@
         console.log(newTrain);
         trainData.ref().push(newTrain);
         alert("train added");
-
+        //empty the input fields
         $("#train-name-input").val("");
         $("#destination-input").val("");
         $("#first-train-input").val("");
         $("#frequency-input").val("");
       });
-      
+      //grab train data from database to populate train schedule fields
 });
